@@ -1,0 +1,236 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+}
+.form{
+    max-width: 430px;
+    border-radius: 6px;
+    background: white;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+}
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 10%;
+    border-bottom: 1px solid #000;
+    z-index: 10;
+}
+nav ul a{
+    list-style: none;
+    display: inline-block;
+    margin: 10px 20px;
+    font-weight: 500;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+}
+nav.logo{
+    width: 220px;
+    cursor: pointer;
+}
+.nav-btn{
+    background: #000;
+    color: #fff;
+    font-size: 16px;
+    padding: 15px 25px;
+    border: 0;
+    outline: 0;
+    border-radius: 40px;
+    cursor: pointer;
+}
+.nav-btn img{
+    width: 16px;
+    margin-left: 8px;
+}
+.header{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(images/bible.jpg);
+    padding: 0 10%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+.nav-btn a{
+    color: white;
+    text-decoration: none;
+}
+.container{
+    background: #fff;
+    width: 450px;
+    padding: 1.5rem;
+    margin: 50px auto;
+    border-radius: 10px;
+    box-shadow: 0 20px 35px rgba(red, green, blue, alpha);
+}
+form{
+    margin:0 2rem;
+}
+.form-title{
+    font-size:1.5rem;
+    font-weight:bold;
+    text-align:center;
+    padding:1.3rem;
+    margin-bottom:0.4rem;
+}
+input{
+    color:inherit;
+    width:100%;
+    background-color:transparent;
+    border:none;
+    border-bottom:1px solid #757575;
+    padding-left:1.5rem;
+    font-size:15px;
+}
+.input-group{
+    padding:1% 0;
+    position:relative;
+
+}
+.input-group i{
+    position:absolute;
+    color:black;
+}
+input:focus{
+    background-color: transparent;
+    outline:transparent;
+    border-bottom:2px solid hsl(327,90%,28%);
+}
+input::placeholder{
+    color:transparent;
+}
+label{
+    color:#757575;
+    position:relative;
+    left:1.7em;
+    top:-1.3em;
+    cursor:auto;
+    transition:0.3s ease all;
+}
+input:focus~label,input:not(:placeholder-shown)~label{
+    top:-3em;
+    color:hsl(327,90%,28%);
+    font-size:15px;
+}
+.recover{
+    text-align:right;
+    font-size:1rem;
+    margin-bottom:1rem;
+
+}
+.recover a{
+    text-decoration:none;
+    color:rgb(125,125,235);
+}
+.recover a:hover{
+    color:blue;
+    text-decoration:underline;
+}
+.btn{
+    font-size:1.1rem;
+    padding:8px 0;
+    border-radius:5px;
+    outline:none;
+    border:none;
+    width:100%;
+    background:rgb(125,125,235);
+    color:white;
+    cursor:pointer;
+    transition:0.9s;
+}
+.btn:hover{
+    background:#07001f;
+}
+.or{
+    font-size:1.1rem;
+    margin-top:0.5rem;
+    text-align:center;
+}
+.icons{
+    text-align:center;
+}
+.icons i{
+    color:rgb(125,125,235);
+    padding:0.5rem 1.5rem;
+    border-radius:10px;
+    font-size:1.5rem;
+    cursor:pointer;
+    border:2px solid #dfe9f5;
+    margin:0 15px;
+    transition:1s;
+}
+.icons i:hover{
+    background:#07001f;
+    font-size:1.6rem;
+    border:2px solid rgb(125,125,235);
+}
+.links{
+    display:flex;
+    justify-content:space-around;
+    padding:0 4rem;
+    margin-top:0.9rem;
+    font-weight:bold;
+}
+button{
+    color:rgb(125,125,235);
+    border:none;
+    background-color:transparent;
+    font-size:1rem;
+    font-weight:bold;
+}
+button:hover{
+    text-decoration:underline;
+    color:blue;
+}
+
+/*----------- animation ------- */
+.header h1 span {
+    background: linear-gradient(#000, #000);
+    background-repeat: no-repeat;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-size: 0%;
+}
+.header h1 span:first-child{
+    animation: textcolor1 2s linear infinite alternate;
+}
+.header h1 span:last-child{
+    animation: textcolor2 2s linear infinite alternate;
+}
+@keyframes textcolor1{
+    0%{
+        background-size: 0%;
+   }
+    40%{
+        background-size: 100%;
+   }
+    100%{
+        background-size: 100%;
+   }
+}
+@keyframes textcolor2{
+    0%{
+        background-size: 0%;
+   }
+    40%{
+        background-size: 0%;
+   }
+    100%{
+        background-size: 100%;
+   }
+}
+.menu-icon{
+    display: none;
+}
+/* ---------- Media Queries for navbar ------ */
