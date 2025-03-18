@@ -55,12 +55,11 @@ nav.logo{
 .header{
     width: 100%;
     min-height: 100vh;
-    background-image: url(images/bible.jpg);
+    background: linear-gradient(#eefff9 0%, #ffccc1 49%, #dcdbff 100%);
     padding: 0 10%;
     display: flex;
     justify-content: center;
     flex-direction: column;
-    
 }
 .nav-btn a{
     color: white;
