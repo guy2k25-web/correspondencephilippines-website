@@ -33,6 +33,9 @@ include("connect.php");
   </nav>
     <div class="header">
       <div class="header-content">
+        <h1>CORRESPONDENCE<br> 
+        BOOK</h1>
+      <button class="btn-dark"><a href="login.php">DOWNLOAD PDF</a><img src="images/download.webp" alt="download"></button> <button class="btn-light"></button><br>
       </div>
       <img src="images/user.png" alt="user" class="user-img">
 </div>
